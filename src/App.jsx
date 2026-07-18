@@ -37,7 +37,7 @@ function App() {
   const categoryNames = ['Humanoid', 'Non-Humanoid'];
   //fetch the names file
   useEffect(() => {
-    fetch('/names.json')
+    fetch(`${import.meta.env.BASE_URL}names.json`)
       .then((res) => res.json())
       .then((namesArray) => {
         //mix images of both folders
