@@ -90,7 +90,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-black/85 h-screen overflow-y-auto">
+      <div className="bg-mist-800 h-screen overflow-y-auto">
         <Buttons categoryNames={categoryNames} excluded={excludeCat} onToggle={toggleExcludeCat} reset={reset} hideToggle={hideExcluded} hidden={hide}/>
         <Cards characters={included} exclude={exclude} excluded={excluded}/>
       </div>
